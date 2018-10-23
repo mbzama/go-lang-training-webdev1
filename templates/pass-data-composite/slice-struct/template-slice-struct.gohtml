@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 style="background-color:DodgerBlue;">Languages</h1>
+	<ul>
+	{{range $l := .}}
+		<li>
+			{{$l.Order}} - {{$l.Name}}
+		</li>
+	{{end}}
+	</ul>
+</body>
+</html>

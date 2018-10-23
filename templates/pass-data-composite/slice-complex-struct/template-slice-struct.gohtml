@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+	{{$summary := .}}
+	<ul>
+	<h1 style="background-color:DodgerBlue;">Languages</h1>
+		{{range $l := $summary.Languages}}
+			<li>
+				{{$l.Order}} - {{$l.Name}}
+			</li>
+		{{end}}
+	</ul>
+	<ul>
+	<h1 style="background-color:DodgerBlue;">IDE:</h1>
+		{{range $i := $summary.Ides}}
+			<li>
+				{{$i.Rating}} - {{$i.Name}}
+			</li>
+		{{end}}
+	</ul>
+</body>
+</html>

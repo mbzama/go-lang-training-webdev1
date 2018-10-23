@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+	{{$name := .}}
+	<h1 style="background-color:DodgerBlue;">Welcome Mr. {{$name}}</h1>
+
+	<h1 style="background-color:DodgerBlue;">Languages</h1>
+	<ul>
+		{{range $key, $val :=.}}
+		<li>{{$key}} - {{$val}}</li>
+		{{end}}
+	</ul>
+
+</body>
+</html>
