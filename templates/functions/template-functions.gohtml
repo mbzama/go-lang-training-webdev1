@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 style="background-color:DodgerBlue;">Languages</h1>
+	<h2>UpperCase (calling uc)</h2>
+	<ul>
+		{{range $l := .}}
+			<li>{{$l.Order}} - {{uc $l.Name}}</li>
+		{{end}}
+	</ul>
+
+	<h2>First Three Chars (calling ft)</h2>
+	<ul>
+		{{range $s := .}}
+			<li>{{$s.Order}} - {{ft $s.Name}}</li>
+		{{end}}
+	</ul>
+</body>
+</html>
