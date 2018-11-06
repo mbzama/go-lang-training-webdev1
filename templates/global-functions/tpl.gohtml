@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>#range:</h1> 
+
+	{{range .}}
+		<h4>{{.}}</h4> 
+	{{end}}
+
+	<h1>#range + if:</h1> 
+	{{range .}}
+		{{if .Name}}
+			<h4>{{.}}</h4> 
+		{{end}}
+	{{end}}
+
+	<h1>#range + if + and:</h1> 
+	{{range .}}
+		{{if and .Name .Admin}}
+			<h4>{{.}}</h4> 
+		{{end}}
+	{{end}}
+	
+</body>
+</html>
