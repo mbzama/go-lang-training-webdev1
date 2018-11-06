@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Pipelines: </h1><br/>
+	<h3 style="background-color:#D189D9;">Input: {{.}} </h3><br/>
+	<h3 style="background-color:#7292C2;">Double: {{. | fdouble}} </h3><br/>
+	<h3 style="background-color:#8E9959;">Double -> Square: {{. | fdouble | fsquare}} </h3><br/>
+	<h3 style="background-color:#A0A19D;">Double -> Square -> Square Root: {{. | fdouble | fsquare | fsquareroot}} </h3><br/>
+	
+</body>
+</html>
